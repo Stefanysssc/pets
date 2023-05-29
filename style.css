@@ -168,3 +168,18 @@ button{
   .purple {
     background: purple;
   }
+
+
+
+
+
+  p {
+    font-size: 2rem;
+ }
+ 
+ button {
+     padding: 7px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+ }
