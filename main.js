@@ -71,7 +71,7 @@ form.addEventListener("submit", (evento) => {
     localStorage.setItem("itens", JSON.stringify(itens))
 
     nome.value = ""
-    //quantidade.value = ""
+ 
 
 })
 
@@ -88,7 +88,7 @@ function criaElemento(item) {
 
     novoItem.appendChild(botaoDeleta(item.id))
 
-    lista.appendChild(novoItem)//Adiciona elemento dentro do pai 
+    lista.appendChild(novoItem)
 }
 
 function atualizaElemento(item) {

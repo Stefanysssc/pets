@@ -9,45 +9,45 @@
     <link rel="stylesheet" href="style.css">
     <title>Cachorros</title>
     <link rel="shortcut icon" href="imagem/forma-da-pata-preta.png" />
+
 </head>
 <header>
 
 </header>
-
 <body>
+
     <section class="container-flex space-around column">
         <div class="item-flex flex">
             <h1>Meu Amigo Pet</h1>
+            <img src="imagem/forma-da-pata-preta.png" height="250px" width="250px">
             <p>
             <h2>O desafio consiste em consumir uma API, tratar suas informações e exibir na tela.
                 Posteriormente será necessário gravar os dados da API no LocalStorage.
                 </p>
             </h2>
-               
-        </div>
-        <br></br>
-        <h1><label class="select" for="image-selector" tabIdex="0"> Selecionar Raça do Cachorro:</label></h1>
-        
-        <div >
+            <br></br>
+            <h1><label class="select" for="image-selector" tabIdex="0"> Selecionar Raça do Cachorro:</label></h1>
+       
             <ul id="lista"></ul>
 
             <select class="select" id="selecaoCao" onchange="getSelectValue();">
-                <span class="image-selector"></span>
-              
+            </div>
                 <option value="null" disabled selected hidden>Selecione</option>
                 <option value="dingo">Dingo</option>
                 <option value="akita">Akita</option>
                 <option value="labrador">Labrador</option>
                 <option value="leonberg">Leornberg</option>
                 <option value="husky">Husky</option>
-            </select>
+            </select> 
+            
+            <div >
             <div id="dog">
 
             </div>
                 
         </div>
 
-
+        
         <div class="container item-flex flex">
 
             <div class="gallery-wrapper">
@@ -58,14 +58,10 @@
             </div>
 
     </section>
-
-
     <script src="main.js"></script>
     </form>
 </body>
-<footer>
-    2º Ten. Stefany Suzanne.
-</footer>
+
 
 <script>
 
