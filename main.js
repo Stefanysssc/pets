@@ -3,6 +3,7 @@ const lista = document.getElementById("lista");
 const itens = JSON.parse(localStorage.getItem("itens")) || []
 
 
+
 function fazGet(url) {
     let request = new XMLHttpRequest();
     request.open('GET', url, false);
@@ -26,9 +27,8 @@ function getSelectValue() {
     //console.log(guardavalor);
     consultaApiPorNomeSelecionado(guardavalor);
 }
-
 function salvar() {
-    document.onclick('clicar');
+    document.onclick('salvar');
     localStorage.setItem(1, response.message);// guardar no LocalStorage
 }
 

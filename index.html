@@ -48,7 +48,7 @@
         </div>
 
         <div>
-            <button>Salvar</button> 
+            <input type='button'  id='salvar'value='Salvar' >
           </div>
         
         <div class="container item-flex flex">
@@ -56,11 +56,29 @@
             <div class="gallery-wrapper">
                 <div class="gallery" >
        
-            
                 </div>
             </div>
 
     </section>
+
+
+
+    <script>    
+    
+    
+        var paragrafo = document.getElementById('mostrar');
+    
+        document.getElementById('salvar').addEventListener('click', function() {
+    
+          localStorage.rua = entrada.value;
+          localStorage.bairro = entrada2.value;
+          mostrar.innerText += localStorage.rua;
+          mostrar.innerText += localStorage.bairro;
+        });
+    </script>
+    <form>
+      <input type='text' id=dog>
+    
     <script src="main.js"></script>
     </form>
 </body>
