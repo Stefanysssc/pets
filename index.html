@@ -19,18 +19,21 @@
         <div class="item-flex flex">
             <h1>Meu Amigo Pet</h1>
             <p>
-            <h2>O33 desafio consiste em consumir uma API, tratar suas informações e exibir na tela.
+            <h2>O desafio consiste em consumir uma API, tratar suas informações e exibir na tela.
                 Posteriormente será necessário gravar os dados da API no LocalStorage.
                 </p>
             </h2>
+               
         </div>
         <br></br>
-        <h1><label for="image-selector"> Selecionar Raça do Cachorro:</label></h1>
+        <h1><label class="select" for="image-selector" tabIdex="0"> Selecionar Raça do Cachorro:</label></h1>
+        
         <div >
             <ul id="lista"></ul>
 
             <select class="select" id="selecaoCao" onchange="getSelectValue();">
-                <!-- onchange="getSelectValue();" -->
+                <span class="image-selector"></span>
+              
                 <option value="null" disabled selected hidden>Selecione</option>
                 <option value="dingo">Dingo</option>
                 <option value="akita">Akita</option>
@@ -46,16 +49,9 @@
 
 
         <div class="container item-flex flex">
-            <!-- <button class="arrow-left control" aria-label="Previous image">◀</button> -->
-            <!-- <button class="arrow-right control" aria-label="Next Image">▶</button> -->
+
             <div class="gallery-wrapper">
                 <div class="gallery" >
-                    <!-- <img  alt="appenzeller" class="item current-item" >
-                    <img src="https://images.dog.ceo/breeds/akita/512px-Akita_inu.jpg" alt="akita"class="item current-item">
-                    <img src="https://images.dog.ceo/breeds/leonberg/n02111129_5303.jpg" alt="leonberg"class="item current-item">
-                    <img src="https://images.dog.ceo/breeds/husky/n02110185_5973.jpg" alt="husky"class="item current-item">
-                    <img src="https://images.dog.ceo/breeds/dingo/n02115641_11717.jpg" alt="dingo"class="item current-item">
-            </div> -->
        
             
                 </div>
