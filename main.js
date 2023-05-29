@@ -28,6 +28,7 @@ function getSelectValue() {
     consultaApiPorNomeSelecionado(guardavalor);
 }
 function salvar() {
+    let guardavalor = document.getElementById("salvar").value;
     document.onclick('salvar');
     localStorage.setItem(1, response.message);// guardar no LocalStorage
 }
@@ -151,7 +152,8 @@ fetch(url)
 
 
 let imgCachorro = document.getElementById('https://images.dog.ceo/breeds/akita/512px-Akita_inu.jpg');
-imgCachorro('click', function () {
+imgCachorro('click', 
+function () {
     fetch('https://dog.ceo/api/breed/Akita/images/random')
         .then(response => response.json())
         .then(data => {
