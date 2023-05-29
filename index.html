@@ -25,7 +25,7 @@
                 Posteriormente será necessário gravar os dados da API no LocalStorage.
                 </p>
             </h2>
-            <br></br>
+           
             <h1><label class="select" for="image-selector" tabIdex="0"> Selecionar Raça do Cachorro:</label></h1>
        
             <ul id="lista"></ul>
@@ -46,9 +46,13 @@
             </div>
                 
         </div>
-        <div>
-            <input  type='button' id='salvar'value='salvar' >
-          </div>
+     
+          <div class="botao">
+            <input id='salvar'value='salvar' >
+            <button type="button" onclick="adicionar()">Adicionar</button> 
+            <button onclick="remover(this)">Excluir</button>
+        </div>
+
         <div class="container item-flex flex">
 
             <div class="gallery-wrapper">
@@ -85,4 +89,4 @@
 
 
 
-<!--teste
+<--teste
