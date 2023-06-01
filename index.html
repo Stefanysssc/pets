@@ -39,50 +39,25 @@
                 <option value="leonberg">Leornberg</option>
                 <option value="husky">Husky</option>
             </select> 
-            
-            <div >
-            <div id="dog">
-
-            </div>
-                
+            <div id="dog"></div> 
+            <div class="botao">
+                <button  id='salvar'onclick="salvaImagem()" >Salvar</button>  
+            </div> 
         </div>
      
-          <div class="botao">
-            <input id='salvar'value='salvar' >
-            <button type="button" onclick="adicionar()">Adicionar</button> 
-            <button onclick="remover(this)">Excluir</button>
-        </div>
+       
 
         <div class="container item-flex flex">
 
             <div class="gallery-wrapper">
-                <div class="gallery" >
-       
+                <div id="galeria" >
                 </div>
             </div>
-
+        </div>
     </section>
-    <script>    
-    
-    
-        var paragrafo = document.getElementById('mostrar');
-    
-        document.getElementById('salvar').addEventListener('click', function() {
-    
-          localStorage.nome= entrada.value;
-
-          mostrar.innerText += localStorage.dog;
-       
-        });
-    </script>
-    <form>
+  
     <script src="main.js"></script>
-    </form>
+   
 </body>
-
-
-<script>
-
-</script>
 
 </html>
